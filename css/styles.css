@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;   
+}
+
+body {
+    width: 100%;
+}
+.header-top{
+  background-color:black;  
+}
+header .header-top ul{
+    display:flex; 
+    justify-content:space-between; 
+    align-items: center; 
+}
+header li{
+    list-style: none;
+    padding: 4px;
+}
+header li.ofertas{
+    margin-left: 90px;
+}
+header li.idioma{
+    margin-right: 90px;
+}
+header li a{
+    text-decoration: none;
+    color: white;
+}
+header nav{
+    background-color:#F0A83E;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    header nav.menu-navegacion img{
+        width: 166px;
+        height: 23px;
+        margin-left: 8px;
+    }  
+header nav i.fa-solid{
+    display: none;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li {
+    margin:10px;
+}
+/*----------- main------ */
+main .section_top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
+    background-repeat: no-repeat;
+    height: 470px;
+    background-size: 100% 100%;
+    text-align: center; 
+  
+}
+main .section_top div{
+    margin-right: 264px;
+    margin-top: 58px;
+}
+main .section_top h1{
+    background-color: #FFFFFF;
+    font-size: 30px;
+    padding: 8px 4px;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+ main .section_top h2{
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+main .section_top a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #F0A83E;
+    padding: 17px;
+    border: 1px solid #f0A83E;
+    border-radius: 5px;
+} 
+main .featured_products{
+    display: flex;flex-direction: column;
+    align-items: center;
+}
+
+main section .img_patita{
+    width: 67px;
+    margin: 10px 10px;
+}
+main .featured_products h2{
+    font-size: 40px;
+    color:#3C2313;
+}
+main section ul li{
+    list-style: none;
+    display: inline
+}
+main section ul li a{
+    text-decoration: none;
+    font-size: 15px;
+}
+main section ul li.accesorios{
+    margin-right:40px;
+    margin-left: 40px;
+}
+main section div.productos{
+    display: flex;
+    justify-content: center;
+}
+main section div.productos article{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    background-color: #FBFAF6;
+    margin: 40px 20px 50px 20px;
+}
+main section div.productos article p{
+    color:#3C2313;
+    font-weight: bold;
+    margin-bottom:  5px;
+}
+main section div.productos article p.precio{
+    color:#F0A83E;
+}
+/*----------- footer------ */
+footer section{
+    background-color:#3C2313;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 70px;
+}
+footer section .logo_footer{
+    padding:23px 0px;
+    display: flex;
+}
+footer section .logo_footer figure{
+    background-color: #8A8787;
+    border: 3px solid #786960;
+    border-radius: 50px;
+    padding: 8px;
+    width: 66px;
+    height: 66px;
+    text-align: center;
+}
+footer section div.logo_email figure{
+    padding-top: 14px;
+    
+}
+footer section div.logo_footer div{
+    margin-left: 23px;
+}
+footer section h3 {
+    color: white;
+}
+footer section p{
+    color: #8A8787;
+}
+.fa-solid{
+    width: 20px;
+    height: 20px;
+}
+footer section img.logo_footer2{
+    width:166px;
+    height: 23px;
+}
+footer p.derechos{
+    background-color:#222222;
+    color:white;
+    text-align: center;
+    padding: 8px 4px 8px 4px;
+}
+
+
+
+
+@media (max-width: 460px){
+    .header-top{
+        display: none;    
+    }
+    header nav ul{
+        display: none;  
+    }
+
+    header nav i.fa-solid{
+        display: flex;
+        margin-right: 10px;
+        margin: 5px;
+        color:white;
+        
+    }
+
+    main .section_top{
+        align-items: center;
+        background-size: cover;
+    }
+
+    main .section_top div{
+        margin-right: 0px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        width: 393px;
+    }
+    main .section_top h2{
+        align-self: flex-end;
+    }
+    main .section_top a{
+        align-self: flex-end;
+    }
+    main .featured_products h2{
+        font-size: 49px;
+        text-align: center;
+    }
+    main section div.productos{
+        flex-direction: column;
+    }
+    footer section{
+       flex-direction: column-reverse; 
+    }
+}
